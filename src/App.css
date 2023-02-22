@@ -1,38 +1,56 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: max-content;
+  background-color: rgba(44, 44, 44, 1);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.navText {
+  display: flex;
+  padding: 0 20px;
+  padding-top: 17px;
+  margin-bottom: 42px;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navTitle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  padding-left: 30px;
+  margin-top: -4px;
 }
+
+.rawCercleContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rawCercle {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  left: 245px;
+  border-radius: 50px;
+  background: linear-gradient(130.53deg, #404040 17.47%, #404040 27.71%, #B0B0B0 27.72%, #B0B0B0 36.75%, #404040 36.76%, #404040 45.49%, #B0B0B0 45.5%, #B0B0B0 54.23%, #404040 54.24%, #404040 63.27%, #B0B0B0 63.27%, #B0B0B0 71.71%, #404040 71.71%);
+  border: 3px solid #FFFFFF; 
+}
+
+.addCross {
+  color: white;
+  font-size: 50px;
+  margin-top: -5px;
+}
+
+.compactPicker {
+  margin-top: 26px;
+}
+
+.compact-picker {
+  border-radius: 10px;
+}
+
+
