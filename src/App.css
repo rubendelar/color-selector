@@ -5,17 +5,15 @@
   color: white;
 }
 
-
 .navText {
   display: flex;
   padding: 0 20px;
   padding-top: 17px;
   margin-bottom: 42px;
- 
 }
 
 .navTitle {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -35,8 +33,23 @@
   height: 50px;
   left: 245px;
   border-radius: 50px;
-  background: linear-gradient(130.53deg, #404040 17.47%, #404040 27.71%, #B0B0B0 27.72%, #B0B0B0 36.75%, #404040 36.76%, #404040 45.49%, #B0B0B0 45.5%, #B0B0B0 54.23%, #404040 54.24%, #404040 63.27%, #B0B0B0 63.27%, #B0B0B0 71.71%, #404040 71.71%);
-  border: 3px solid #FFFFFF; 
+  background: linear-gradient(
+    130.53deg,
+    #404040 17.47%,
+    #404040 27.71%,
+    #b0b0b0 27.72%,
+    #b0b0b0 36.75%,
+    #404040 36.76%,
+    #404040 45.49%,
+    #b0b0b0 45.5%,
+    #b0b0b0 54.23%,
+    #404040 54.24%,
+    #404040 63.27%,
+    #b0b0b0 63.27%,
+    #b0b0b0 71.71%,
+    #404040 71.71%
+  );
+  border: 3px solid #ffffff;
 }
 
 .addCross {
@@ -53,4 +66,57 @@
   border-radius: 10px;
 }
 
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 20px;
+}
 
+.inputTitle {
+  margin-top: 15px;
+  margin-bottom: 1px;
+  font-size: medium;
+}
+
+.inputText {
+  width: 70%;
+  border-radius: 5px;
+  border: solid 4px white;
+  background-color: transparent;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.inputSubmit {
+  border-radius: 12px;
+  height: 40px;
+  width: 60px;
+  font-size: larger;
+  background-color: white;
+}
+
+.newPalletesContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.CercleContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  border-radius: 10px;
+  margin: 0 20px;
+  height: 60px;
+}
+
+.Cercle {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  left: 245px;
+  border-radius: 50px;
+  border: 3px solid #ffffff;
+}

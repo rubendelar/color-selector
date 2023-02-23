@@ -1,5 +1,6 @@
-import React from 'react'
-import { CompactPicker } from 'react-color';
+import React from "react";
+import { CompactPicker } from "react-color";
+import Pallettes from "./Pallettes";
 
 // class Component extends React.Component {
 
@@ -10,22 +11,32 @@ import { CompactPicker } from 'react-color';
 
 function Colors() {
   return (
+    <div>
+      <div className="rawCercleContainer">
+        <button className="rawCercle">
+          <p className="addCross">+</p>
+        </button>
+        <button className="rawCercle">
+          <p className="addCross">+</p>
+        </button>
+        <button className="rawCercle">
+          <p className="addCross">+</p>
+        </button>
+        <button className="rawCercle">
+          <p className="addCross">+</p>
+        </button>
+        <button className="rawCercle">
+          <p className="addCross">+</p>
+        </button>
+      </div>
 
-<div>
+      <div className="compactPicker">
+        <CompactPicker />
+      </div>
 
-    <div className='rawCercleContainer' >
-       <button className='rawCercle'><p className='addCross'>+</p></button>
-       <button className='rawCercle'><p className='addCross'>+</p></button>
-       <button className='rawCercle'><p className='addCross'>+</p></button>
-       <button className='rawCercle'><p className='addCross'>+</p></button>
-       <button className='rawCercle'><p className='addCross'>+</p></button>
+      <Pallettes />
     </div>
-
-    <div className='compactPicker'><CompactPicker/></div>
-    
-
-</div>
-  )
+  );
 }
 
-export default Colors
+export default Colors;
