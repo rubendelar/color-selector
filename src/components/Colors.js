@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { CompactPicker } from "react-color";
 import Pallettes from "./Pallettes";
 
@@ -13,14 +13,9 @@ import Pallettes from "./Pallettes";
 
 function Colors() {
 
-  useEffect(() => {
-    const color = getComputedStyle(document.documentElement).getPropertyValue('--cercle-background')
-    console.log(color);
-  }, []);
-
   const [displayColor, setDisplayColor] = useState(false);
   const [color, setColor] = useState();
-  
+
 
   const handleColorChange = (newColor) => {
     setDisplayColor(true);
@@ -32,6 +27,7 @@ function Colors() {
     if (displayColor === true) {
       document.documentElement.style.setProperty('--addcross-color1',"transparent");
       document.documentElement.style.setProperty('--cercle-background1',color);
+
       setDisplayColor(false);
     } 
   }
@@ -39,6 +35,7 @@ function Colors() {
     if (displayColor === true) {
       document.documentElement.style.setProperty('--addcross-color2',"transparent")
       document.documentElement.style.setProperty('--cercle-background2',color);
+
       setDisplayColor(false);
     } 
   }
@@ -46,6 +43,7 @@ function Colors() {
     if (displayColor === true) {
       document.documentElement.style.setProperty('--addcross-color3',"transparent")
       document.documentElement.style.setProperty('--cercle-background3',color);
+
       setDisplayColor(false);
     } 
   }
@@ -53,6 +51,7 @@ function Colors() {
     if (displayColor === true) {
       document.documentElement.style.setProperty('--addcross-color4',"transparent")
       document.documentElement.style.setProperty('--cercle-background4',color);
+
       setDisplayColor(false);
     } 
   }
@@ -60,6 +59,7 @@ function Colors() {
     if (displayColor === true) {
       document.documentElement.style.setProperty('--addcross-color5',"transparent")
       document.documentElement.style.setProperty('--cercle-background5',color);
+
       setDisplayColor(false);
     } 
   }
@@ -79,7 +79,7 @@ function Colors() {
         <CompactPicker color={color} onChange={handleColorChange}  />
       </div>
 
-      <Pallettes />
+      <Pallettes/>
     </div>
   );
 }

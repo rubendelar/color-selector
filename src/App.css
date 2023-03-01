@@ -1,5 +1,5 @@
 :root {
-
+  
   --addcross-color1: white;
   --addcross-color2: white;
   --addcross-color3: white;
@@ -145,7 +145,6 @@ body {
   left: 245px;
   border-radius: 50px;
   margin-top: -5px;
-  
 }
 
 .rawCercle1 {
@@ -196,9 +195,8 @@ body {
 }
 
 .saveBar {
-  margin-top: 5px;
   display: flex;
-  
+  margin-top: 5px;
 }
 
 .inputText {
@@ -245,7 +243,7 @@ body {
   
 }
 
-.Cercle {
+.cercle {
   box-sizing: border-box;
   width: 40px;
   height: 40px;
@@ -253,6 +251,22 @@ body {
   border-radius: 50px;
   border: 3px solid #ffffff;
   margin: auto;
+}
+
+.cercle1 {
+  background: var(--cercle-background1);
+}
+.cercle2 {
+  background: var(--cercle-background2);
+}
+.cercle3 {
+  background: var(--cercle-background3);
+}
+.cercle4 {
+  background: var(--cercle-background4);
+}
+.cercle5 {
+  background: var(--cercle-background5);
 }
 
 .inputSubTitle {
@@ -265,10 +279,54 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  
 }
 
 .removeIcon {
   background-color: transparent;
   border: none;
+}
+
+@media screen and (min-width: 800px) {
+
+  .navText {
+    justify-content: center;
+  }
+
+  .navTitle {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .rawCercleContainer {
+    justify-content: space-around;
+    width: 65%;
+    margin: auto;
+  }
+
+  .rawCercle {
+    width: 73.33px;
+    height: 73.33px;
+  }
+
+  .rawCercle:focus {
+    width: 88px;
+    height: 88px;
+  }
+
+  .compactPicker {
+    display: flex;
+    margin-top: 90px;
+  }
+
+  .inputContainer {
+    display:inline;
+    flex-direction:column;
+    text-align: left;
+    padding: 5px 20px;
+  }
+
+
+
+
+
 }
