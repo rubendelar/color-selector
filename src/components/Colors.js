@@ -1,15 +1,7 @@
 import React, { useState} from "react";
 import { CompactPicker } from "react-color";
-import Pallettes from "./Pallettes";
+import SavedPalletes from "./SavedPalletes";
 
-
-
-// class Component extends React.Component {
-
-//   render() {
-//     return <CompactPicker />;
-//   }
-// }
 
 function Colors() {
 
@@ -63,6 +55,17 @@ function Colors() {
       setDisplayColor(false);
     } 
   }
+
+  const [palleteName, setPalleteName] = useState('');
+
+  const handleSubmit = (e) => {
+       if (palleteName!==('')) {
+        e.preventDefault();
+        //addPalleteElements();
+       } else 
+       e.preventDefault();
+       alert('Please give a pallets name')
+  }
   
  
   return (
@@ -75,11 +78,28 @@ function Colors() {
         <button className="rawCercle rawCercle5" onClick={changeCercle5}>+</button>
       </div>
 
+      <div className="bigContainer">
       <div className="compactPicker">
         <CompactPicker color={color} onChange={handleColorChange}  />
       </div>
-
-      <Pallettes/>
+      <div className="inputContainer">
+        <h2 className="inputTitle1">Name</h2>
+        <div>
+        <form className="saveBar" onSubmit={handleSubmit}>
+          <input 
+            id="mainInput"
+            onChange={(e) => setPalleteName(e.target.value)}
+            value={palleteName}
+            type="text"
+            placeholder="Website color scheme"
+            className="inputText"
+          />
+          <button type="submit" className="inputSubmit" >+</button>
+        </form>       
+        </div>
+      </div>
+      </div>
+      <SavedPalletes text={palleteName} />
     </div>
   );
 }

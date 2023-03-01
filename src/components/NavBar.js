@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="navText">
-        <LogoSvg />
+        <LogoSvg className="logo"/>
         <div className="navTitle">Color palette generator</div>
       </div>
     </div>

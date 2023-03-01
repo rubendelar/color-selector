@@ -240,7 +240,6 @@ body {
   border-radius: 10px;
   margin: 0 20px;
   height: 60px;
-  
 }
 
 .cercle {
@@ -286,6 +285,8 @@ body {
   border: none;
 }
 
+
+
 @media screen and (min-width: 800px) {
 
   .navText {
@@ -298,14 +299,16 @@ body {
   }
 
   .rawCercleContainer {
-    justify-content: space-around;
-    width: 65%;
+    justify-content: center;
+    width: 75%;
     margin: auto;
   }
 
   .rawCercle {
     width: 73.33px;
     height: 73.33px;
+    margin-left: 36.37px;
+    
   }
 
   .rawCercle:focus {
@@ -313,17 +316,70 @@ body {
     height: 88px;
   }
 
-  .compactPicker {
-    display: flex;
+  .bigContainer{
     margin-top: 90px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .compactPicker {
+    margin: 0;
+   
   }
 
   .inputContainer {
-    display:inline;
-    flex-direction:column;
-    text-align: left;
-    padding: 5px 20px;
+    padding: 0;
+    padding-left: 80px;
+    width: 30%;
   }
+
+  .inputText {
+    width: 100%;
+   
+  }
+
+  
+
+  .newPalletesContainer {
+    margin-top: 117px;
+    width: 30%;
+    padding-right: 53px;
+    padding-bottom: 42px;
+    padding-left: 10%;
+  }
+
+  .CercleContainer {
+    margin: 0px;
+    height: 66px;
+  }
+
+  .cercle {
+    width: 42px;
+    height: 42px;
+    margin: auto;
+  }
+
+  .inputSubTitle {
+    display: flex;
+    justify-content:space-between;
+    padding: 0px;
+  }
+
+  .addedSubtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+  }
+
+  .logo {
+    height: 51px;
+    width: 55px;
+    
+  }
+
+
+
+  
 
 
 

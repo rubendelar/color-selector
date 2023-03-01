@@ -5,6 +5,7 @@ const SavedPalletes = (props) => {
   
 
   return (
+    <div className="mainNewPalletesContainer">
     <div className="newPalletesContainer">
     <h2 className="inputTitle2">Saved palletes</h2>
     <div>
@@ -19,6 +20,7 @@ const SavedPalletes = (props) => {
         <button className="cercle cercle4"></button>
         <button className="cercle cercle5"></button>
         </div>
+    </div>
     </div>
     </div>
   );
