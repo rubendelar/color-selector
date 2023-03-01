@@ -145,6 +145,7 @@ body {
   left: 245px;
   border-radius: 50px;
   margin-top: -5px;
+  background-color: rgba(34, 34, 34, 0.182);
 }
 
 .rawCercle1 {
@@ -314,6 +315,7 @@ body {
   .rawCercle:focus {
     width: 88px;
     height: 88px;
+    background-color: rgba(34, 34, 34, 0.182);
   }
 
   .bigContainer{
@@ -337,8 +339,6 @@ body {
     width: 100%;
    
   }
-
-  
 
   .newPalletesContainer {
     margin-top: 117px;

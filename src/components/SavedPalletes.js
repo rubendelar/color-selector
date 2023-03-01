@@ -2,7 +2,6 @@ import React from "react";
 import { ReactComponent as IconPapelera } from "../Icon_papelera.svg";
 
 const SavedPalletes = (props) => {
-  
 
   return (
     <div className="mainNewPalletesContainer">

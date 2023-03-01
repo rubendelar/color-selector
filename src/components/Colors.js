@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import { CompactPicker } from "react-color";
 import SavedPalletes from "./SavedPalletes";
 
@@ -7,6 +7,11 @@ function Colors() {
 
   const [displayColor, setDisplayColor] = useState(false);
   const [color, setColor] = useState();
+  const [palleteName, setPalleteName] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem('dataKey', JSON.stringify(palleteName));
+  }, [palleteName]);
 
 
   const handleColorChange = (newColor) => {
@@ -56,15 +61,9 @@ function Colors() {
     } 
   }
 
-  const [palleteName, setPalleteName] = useState('');
 
   const handleSubmit = (e) => {
-       if (palleteName!==('')) {
-        e.preventDefault();
-        //addPalleteElements();
-       } else 
-       e.preventDefault();
-       alert('Please give a pallets name')
+    e.preventDefault();
   }
   
  
@@ -86,7 +85,8 @@ function Colors() {
         <h2 className="inputTitle1">Name</h2>
         <div>
         <form className="saveBar" onSubmit={handleSubmit}>
-          <input 
+          <input  
+            required
             id="mainInput"
             onChange={(e) => setPalleteName(e.target.value)}
             value={palleteName}
@@ -99,7 +99,7 @@ function Colors() {
         </div>
       </div>
       </div>
-      <SavedPalletes text={palleteName} />
+      <SavedPalletes text={palleteName} setText={setPalleteName}/>
     </div>
   );
 }
